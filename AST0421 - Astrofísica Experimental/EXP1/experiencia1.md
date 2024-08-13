@@ -186,6 +186,7 @@ se puede cambiar el bineo promediando por algún parámetro (e.g. para el plot f
 interactie: True, iteraciones mayores a 0
 
 (ir agregando mascaras region por region donde pensemos que hay emisión)
+(limpiar hasta que el residuo parezca ruido)
 
 
 
