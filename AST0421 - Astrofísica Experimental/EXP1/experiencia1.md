@@ -232,8 +232,10 @@ immarith o pbcor
 ### TAREA PARA EL MARTES
 
 - Crear imágenes del continuo y cubos limpios
-- Identificar el rango de frecuencias 
-- 
+- Identificar el rango de frecuencias de las líneas y sustraer el continuo
+- Crear momentos de las líneas
+- Aplicar la corrección de PB al momento-0
+- Próximas semanas veremos cómo hacer fotometría!
 
     
 
