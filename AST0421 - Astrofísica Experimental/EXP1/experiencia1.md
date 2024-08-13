@@ -188,7 +188,52 @@ interactie: True, iteraciones mayores a 0
 (ir agregando mascaras region por region donde pensemos que hay emisión)
 (limpiar hasta que el residuo parezca ruido)
 
+### Sustracción del continuo
 
+Una vez encontrado el rango de frecuencias de las líneas
+
+```python
+uvcontsub(vis='myMS.ms', fitspw='23.684~23.704GHz', excludechans=True, combine ...)
+```
+
+### Probando parámetros
+
+Dentro de tclean
+
+- deconvolver = multiscale
+- usemask = auto-multithresh
+
+### Momentos de las líneas
+
+para momento 0: tener flujo integrado de la línea
+
+- immoments(cubo)
+
+```python
+immoments(
+    'clean.image',
+    moments=[-1,0,1,2,8],
+    chans='20~30',
+    axis='spec',
+    mask='"clean.image">0.5',
+    outfile='mom_withmask.im',
+    includepix=(1e-3,1)
+)
+```
+
+(en el informe hay que dejar bien claro cómo se hicieron los momentos)
+
+### Corrección por el Primary Beam
+
+immarith o pbcor
+
+.pbcor (primary beam correction)
+
+### TAREA PARA EL MARTES
+
+- Crear imágenes del continuo y cubos limpios
+- Identificar el rango de frecuencias 
+- 
 
     
 
